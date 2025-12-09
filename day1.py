@@ -1,4 +1,3 @@
-from math import ceil
 from typing import List, Tuple
 from aoc import read_file
 
