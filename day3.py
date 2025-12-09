@@ -4,7 +4,7 @@ from aoc import read_file
 def get_data() -> List[List[int]]:
     return [[int(c) for c in line.strip()] for line in read_file(3)]
 
-def solve_part_1(data):
+def solve_part_1(data) -> int:
     total = 0
     for bank in data:
         a = max(range(0, len(bank) - 1), key=lambda i: bank[i])
@@ -13,7 +13,7 @@ def solve_part_1(data):
         total += j
     return total
 
-def solve_part_2(data):
+def solve_part_2(data) -> int:
     total = 0
     for bank in data:
         l = len(bank)

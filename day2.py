@@ -15,7 +15,7 @@ def check_1(id: int) -> bool:
     m = l // 2
     return l % 2 == 0 and s[:m] == s[m:]
 
-def solve_part_one(data) -> int:
+def solve_part_1(data) -> int:
     total = 0
     for x, y in data:
         i = x
@@ -37,7 +37,7 @@ def check_2(id: int) -> bool:
         i += 1
     return False
 
-def solve_part_two(data) -> int:
+def solve_part_2(data) -> int:
     total = 0
     for x, y in data:
         i = x
@@ -49,5 +49,5 @@ def solve_part_two(data) -> int:
 
 if __name__ == "__main__":
     data = get_data()
-    print(solve_part_one(data))
-    print(solve_part_two(data))
+    print(solve_part_1(data))
+    print(solve_part_2(data))

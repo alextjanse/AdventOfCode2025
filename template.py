@@ -12,5 +12,5 @@ def solve_part_2(data):
 
 if __name__ == "__main__":
     data = get_data()
-    solve_part_1(data)
-    solve_part_2(data)
+    print(solve_part_1(data))
+    print(solve_part_2(data))
