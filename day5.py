@@ -1,5 +1,4 @@
 from typing import List, Tuple
-from itertools import chain
 from aoc import read_file
 
 def get_data() -> Tuple[List[Tuple[int, int]], List[int]]:
