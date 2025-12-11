@@ -22,7 +22,7 @@ def distance(vec1: Vec, vec2: Vec) -> int:
 def get_distances(data: List[Vec]) -> List[Tuple[int, int, int]]:
     distances: List[Tuple[int, int, int]] = sum(
         [[(i, i + 1 + j, distance(v1, v2)) for j, v2 in enumerate(data[i + 1:])] for i, v1 in enumerate(data[:-1])],
-        start=[]    
+        start=[]
     )
     return sorted(distances, key=lambda dist: dist[2])
 
